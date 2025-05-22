@@ -8,6 +8,7 @@ from datetime import datetime
 import pandas as pd
 
 
+# маленький комментарий для гит
 config = configparser.ConfigParser()
 config.read('../config/config.ini')
 folder_data = eval(config['product']['folder_data'])
