@@ -1,0 +1,5 @@
+dates,doc_id,category,item,price,amount,discount
+2025-05-22,s6_c4,sentiment,grief,10000,5,0
+2025-05-22,s6_c4,weather,rain,3000,3,0
+2025-05-22,s6_c4,season,winter,500,1,10
+2025-05-22,s6_c4,sentiment,sadness,500,2,10

@@ -1,0 +1,6 @@
+dates,doc_id,category,item,price,amount,discount
+2025-05-22,s5_c3,weather,snow,1000,1,5
+2025-05-22,s5_c3,season,winter,500,1,5
+2025-05-22,s5_c3,weather,rain,3000,2,0
+2025-05-22,s5_c3,sentiment,joy,100,2,5
+2025-05-22,s5_c3,weather,sun,100,5,5
