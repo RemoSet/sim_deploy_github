@@ -1,4 +1,0 @@
-dates,doc_id,category,item,price,amount,discount
-2025-05-22,s8_c3,weather,rain,3000,2,0
-2025-05-22,s8_c3,season,autumn,500,5,0
-2025-05-22,s8_c3,weather,clouds,1500,3,5

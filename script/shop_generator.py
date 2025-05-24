@@ -8,9 +8,9 @@ from datetime import datetime
 import pandas as pd
 
 
-# маленький комментарий для гит
+dirname = os.path.dirname(__file__)  # !
 config = configparser.ConfigParser()
-config.read('../config/config.ini')
+config.read(os.path.join(dirname, '../config/config.ini'))  # !
 folder_data = eval(config['product']['folder_data'])
 folder_log = eval(config['logger']['folder_log'])
 os.makedirs(folder_data, exist_ok=True)
