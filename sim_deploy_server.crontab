@@ -1,1 +1,1 @@
-# root@cv4648903:/home/sim_deploy_server#
+*/5 * * * * /home/sim_deploy_server/venv/bin/python /home/sim_deploy_server/script/shop_generator.py
