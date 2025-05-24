@@ -35,6 +35,7 @@ for shop_cash in shop_random_list:
     list_cash = [[date_generate] + [f's{shop_cash[0]}_c{shop_cash[1]}'] + i + [random.randint(1, 5)]
                  + [random.choice([0, 5, 10])] for i in list_product]
     df_cash = pd.DataFrame(list_cash, columns=['dates', 'doc_id', 'category', 'item', 'price', 'amount', 'discount'])
-    df_cash.to_csv(os.path.join(folder_data, f'shop{shop_cash[0]}_cash{shop_cash[1]}.csv'), encoding='utf-8', index=False)
+# !
+    df_cash.to_csv(os.path.join(dirname, f'shop{shop_cash[0]}_cash{shop_cash[1]}.csv'), encoding='utf-8', index=False)
     logging.info(f'create file: shop{shop_cash[0]}_cash{shop_cash[1]}.csv')
 logging.info(f'{date_generate} : GENERATE OK')
