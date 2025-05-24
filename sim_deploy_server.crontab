@@ -1,3 +1,4 @@
+HOME=/home/sim_deploy_server/script
 SHELL=/home/sim_deploy_server/venv/bin/python
 MAILTO=""
-*/5 * * * * /home/sim_deploy_server/script/shop_generator.py
+*/5 * * * * ./shop_generator.py
