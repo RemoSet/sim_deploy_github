@@ -1,4 +1,0 @@
-dates,doc_id,category,item,price,amount,discount
-2025-05-25,s6_c4,weather,sun,100,1,5
-2025-05-25,s6_c4,sentiment,joy,100,1,0
-2025-05-25,s6_c4,weather,clouds,1500,2,10

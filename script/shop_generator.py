@@ -8,18 +8,21 @@ from datetime import datetime
 import pandas as pd
 
 
-dirname = os.path.dirname(__file__)  # !
 config = configparser.ConfigParser()
-config.read(os.path.join(dirname, '../config/config.ini'))  # !
-folder_data = eval(config['product']['folder_data'])
-folder_log = eval(config['logger']['folder_log'])
-os.makedirs(folder_data, exist_ok=True)
-os.makedirs(folder_log, exist_ok=True)
-delete_file = glob.glob('*.*', root_dir=folder_data)
+# here.... каждому хере свой дир
+dir_script = os.path.dirname(__file__)
+dir_project = os.path.dirname(dir_script)
+dir_config = os.path.join(dir_project, 'config')
+config.read(os.path.join(dir_config, 'config.ini'))
+dir_data = os.path.join(dir_project, eval(config['product']['folder_data']))
+dir_log = os.path.join(dir_project, eval(config['logger']['folder_log']))
+os.makedirs(dir_data, exist_ok=True)
+os.makedirs(dir_log, exist_ok=True)
+delete_file = glob.glob('*.*', root_dir=dir_data)
 for file in delete_file:
-    path = os.path.join(folder_data, file)
+    path = os.path.join(dir_data, file)
     os.remove(path)
-file_log = os.path.join(folder_log, eval(config['logger']['shop_generator_log']))
+file_log = os.path.join(dir_log, eval(config['logger']['shop_generator_log']))
 date_generate = datetime.today().date()
 logging.basicConfig(level=logging.INFO, filename=file_log, filemode='w')
 if datetime.weekday(date_generate) not in eval(config['product']['working_days_week']):
@@ -35,7 +38,6 @@ for shop_cash in shop_random_list:
     list_cash = [[date_generate] + [f's{shop_cash[0]}_c{shop_cash[1]}'] + i + [random.randint(1, 5)]
                  + [random.choice([0, 5, 10])] for i in list_product]
     df_cash = pd.DataFrame(list_cash, columns=['dates', 'doc_id', 'category', 'item', 'price', 'amount', 'discount'])
-# !
-    df_cash.to_csv(os.path.join(dirname, f'shop{shop_cash[0]}_cash{shop_cash[1]}.csv'), encoding='utf-8', index=False)
+    df_cash.to_csv(os.path.join(dir_data, f'shop{shop_cash[0]}_cash{shop_cash[1]}.csv'), encoding='utf-8', index=False)
     logging.info(f'create file: shop{shop_cash[0]}_cash{shop_cash[1]}.csv')
 logging.info(f'{date_generate} : GENERATE OK')
