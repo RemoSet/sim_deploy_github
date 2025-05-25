@@ -1,4 +1,3 @@
 MAILTO=""
-script1='/home/sim_deploy_server/venv/bin/python /home/sim_deploy_server/script/shop_generator.py'
-script2='/home/sim_deploy_server/venv/bin/python /home/sim_deploy_server/script/upload_to_database.py'
-*/2 * * * * script1 && script2
+*/2 * * * * /home/sim_deploy_server/venv/bin/python /home/sim_deploy_server/script/shop_generator.py && /home/sim_deploy_server/venv/bin/python /home/sim_deploy_server/script/upload_to_database.py
+
