@@ -1,2 +1,3 @@
 MAILTO=""
-*/2 * * * * /home/sim_deploy_server/venv/bin/python /home/sim_deploy_server/script/shop_generator.py && /home/sim_deploy_server/venv/bin/python /home/sim_deploy_server/script/upload_to_database.py
+*/5 * * * * /home/sim_deploy_server/venv/bin/python /home/sim_deploy_server/script/shop_generator.py && /home/sim_deploy_server/venv/bin/python /home/sim_deploy_server/script/upload_to_database.py
+*/5 * * * * sleep 30 && /home/sim_deploy_server/git add .; git commit -m 'f'; git push
