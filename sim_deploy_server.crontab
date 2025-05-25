@@ -1,4 +1,4 @@
-# ?
+# ??
 MAILTO=""
 */5 * * * * /home/sim_deploy_server/venv/bin/python /home/sim_deploy_server/script/shop_generator.py && /home/sim_deploy_server/venv/bin/python /home/sim_deploy_server/script/upload_to_database.py
 */6 * * * * /home/sim_deploy_server/git add . && /home/sim_deploy_server/git commit -m 'commit_server ' && /home/sim_deploy_server/git push
