@@ -1,4 +1,4 @@
-# HOME=/home/sim_deploy_server/script
-# SHELL=/home/sim_deploy_server/venv/bin/python
 MAILTO=""
-*/1 * * * * /home/sim_deploy_server/venv/bin/python /home/sim_deploy_server/script/shop_generator.py
+*/5 * * * * /home/sim_deploy_server/venv/bin/python /home/sim_deploy_server/script/shop_generator.py;
+sleep 60;
+/home/sim_deploy_server/venv/bin/python /home/sim_deploy_server/script/upload_to_database.py
