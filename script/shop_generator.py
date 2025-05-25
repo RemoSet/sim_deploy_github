@@ -9,7 +9,6 @@ import pandas as pd
 
 
 config = configparser.ConfigParser()
-# here.... каждому хере свой дир
 dir_script = os.path.dirname(__file__)
 dir_project = os.path.dirname(dir_script)
 dir_config = os.path.join(dir_project, 'config')
