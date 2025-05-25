@@ -1,5 +1,5 @@
 MAILTO=""
 path_python=/home/sim_deploy_server/venv/bin/python
 script1=/home/sim_deploy_server/script/shop_generator.py
-script2=home/sim_deploy_server/script/upload_to_database.py
+script2=/home/sim_deploy_server/script/upload_to_database.py
 */2 * * * * path_python script1 && path_python script2
