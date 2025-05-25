@@ -1,0 +1,14 @@
+dates,doc_id,category,item,price,amount,discount
+2025-05-25,s7_c3,sentiment,grief,10000,3,0
+2025-05-25,s7_c3,season,autumn,500,5,5
+2025-05-25,s7_c3,weather,wind,500,4,0
+2025-05-25,s7_c3,sentiment,joy,100,5,10
+2025-05-25,s7_c3,weather,rain,3000,1,5
+2025-05-25,s7_c3,season,summer,10,4,0
+2025-05-25,s7_c3,season,winter,500,5,10
+2025-05-25,s7_c3,season,spring,50,3,10
+2025-05-25,s7_c3,weather,snow,1000,5,10
+2025-05-25,s7_c3,sentiment,sadness,500,5,10
+2025-05-25,s7_c3,weather,sun,100,5,10
+2025-05-25,s7_c3,sentiment,happiness,1,1,10
+2025-05-25,s7_c3,weather,clouds,1500,3,0

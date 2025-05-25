@@ -1,0 +1,8 @@
+dates,doc_id,category,item,price,amount,discount
+2025-05-25,s1_c4,weather,clouds,1500,5,5
+2025-05-25,s1_c4,season,winter,500,2,0
+2025-05-25,s1_c4,season,summer,10,3,0
+2025-05-25,s1_c4,sentiment,happiness,1,2,10
+2025-05-25,s1_c4,weather,snow,1000,2,0
+2025-05-25,s1_c4,sentiment,grief,10000,1,5
+2025-05-25,s1_c4,weather,rain,3000,2,5
