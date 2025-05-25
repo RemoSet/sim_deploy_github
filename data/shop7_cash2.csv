@@ -1,0 +1,7 @@
+dates,doc_id,category,item,price,amount,discount
+2025-05-25,s7_c2,season,spring,50,5,10
+2025-05-25,s7_c2,sentiment,sadness,500,4,0
+2025-05-25,s7_c2,season,autumn,500,2,5
+2025-05-25,s7_c2,season,summer,10,2,10
+2025-05-25,s7_c2,sentiment,joy,100,1,0
+2025-05-25,s7_c2,season,winter,500,5,10
